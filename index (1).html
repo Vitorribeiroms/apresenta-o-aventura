@@ -160,14 +160,14 @@
   .index .it .lab{font-size:.85rem; letter-spacing:.04em; color:var(--muted); max-width:11ch}
 
   /* protótipo no aparelho */
-  .demo{display:grid; grid-template-columns:1fr 1.05fr; gap:clamp(2rem,5vw,4rem); align-items:center; margin-top:1.5rem}
+  .demo{display:grid; grid-template-columns:1.1fr .9fr; gap:clamp(2rem,5vw,4rem); align-items:center; margin-top:1.5rem}
   .demo .copy .n{font-family:'Fraunces',serif; font-weight:600; color:var(--spot); font-size:2.4rem; line-height:1}
   .demo .copy .entry-tag{display:inline-block; font-size:.74rem; letter-spacing:.26em; text-transform:uppercase;
     color:var(--spot); font-weight:600; border:1px solid rgba(242,193,102,.5); border-radius:999px; padding:.42rem .95rem}
   .demo .copy h2{margin-top:.6rem}
   .demo .copy p{color:var(--muted); font-size:1.05rem; line-height:1.55; margin-top:1rem; max-width:34ch}
   .phone-wrap{display:flex; justify-content:center}
-  .phone{width:auto; height:min(88vh,920px); aspect-ratio:9/19.2; border-radius:36px; border:2px solid var(--line); padding:10px;
+  .phone{width:min(252px,60vw); aspect-ratio:9/19.2; border-radius:36px; border:2px solid var(--line); padding:10px;
     background:linear-gradient(180deg,#1b1a22,#101016); box-shadow:0 30px 80px -30px rgba(0,0,0,.8), 0 0 0 1px rgba(0,0,0,.4) inset; position:relative}
   .phone::before{content:""; position:absolute; top:14px; left:50%; transform:translateX(-50%); width:74px; height:6px; border-radius:99px; background:rgba(0,0,0,.6); z-index:3}
   .phone .screen{height:100%; border-radius:28px; overflow:hidden; position:relative;
@@ -179,17 +179,17 @@
 
   /* slide do vídeo de cadastro: celular maior (limitado pela altura da tela) */
   .vid-slide .demo{grid-template-columns:.82fr 1.18fr; gap:clamp(1.6rem,4vw,3.4rem)}
-  .vid-slide .phone{width:auto; height:min(90vh,940px)}
+  .vid-slide .phone{width:auto; height:min(80vh,780px)}
   @media(max-width:760px){
     .vid-slide .demo{grid-template-columns:1fr}
     .vid-slide .phone{width:min(300px,74vw); height:auto}
   }
-  @media(max-width:760px){.demo{grid-template-columns:1fr; gap:1.6rem}.phone{width:min(300px,80vw); height:auto}}
+  @media(max-width:760px){.demo{grid-template-columns:1fr; gap:1.6rem}.phone{width:min(210px,52vw)}}
 
   /* dashboard admin — dois aparelhos lado a lado */
-  .dash{display:flex; gap:clamp(1.4rem,4vw,3rem); justify-content:center; align-items:center; margin-top:1.8rem}
-  .phone.phone-sm{width:auto; height:min(72vh,680px)}
-  @media(max-width:760px){.dash{flex-direction:column; gap:1.4rem}.phone.phone-sm{width:min(280px,72vw); height:auto}}
+  .dash{display:flex; gap:clamp(1rem,4vw,2.6rem); justify-content:center; align-items:center; margin-top:1.4rem}
+  .phone.phone-sm{width:min(208px,42vw)}
+  @media(max-width:760px){.dash{gap:.8rem}.phone.phone-sm{width:min(150px,40vw)}}
 
   .cap{margin-top:1rem; color:var(--muted); font-size:.95rem; letter-spacing:.02em; max-width:46ch; margin-inline:auto}
 
